@@ -1,0 +1,29 @@
+@layer layout {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;      
+    text-align: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+  main img { width: 120px; }
+  main p { max-width: 40ch; color: var(--muted); }
+
+  .home-link {
+    margin-top: var(--space-1);
+    padding: var(--space-1) var(--space-3);
+    background: var(--ink);
+    color: var(--paper);
+    border: var(--border);
+    text-decoration: none;
+  }
+  .home-link:hover { background: var(--accent); border-color: var(--accent); }
+}

@@ -1,0 +1,39 @@
+
+:root {
+  /* designs */
+  --ink: #111;
+  --paper: #fff;
+  --panel: #f2f2f2;
+  --accent: #e30613;
+  --muted: #6b6b6b;
+
+  /* spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --space-5: 6rem;
+
+  /* border looks */
+  --border-style: solid;
+  --border-width: 1px;
+  --rule-width: 4px;
+  --underline-width: 2px;
+  --border: var(--border-width) var(--border-style) var(--ink);
+  --rule: var(--rule-width) var(--border-style) var(--accent);
+
+  /* text category */
+  --font-sans: system-ui, "Helvetica Neue", Arial, sans-serif;  
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace; 
+  --text-s: 0.875rem;
+  --text-m: 1rem;
+  --text-l: 1.5rem;
+  --text-xl: 2.25rem;
+  --leading-body: 1.6; 
+  --leading-tight: 1.15;
+
+
+  /* other measure */
+  --measure: 62ch; 
+  --sidebar: 14rem; 
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "hw4-site",
+			"path": ".."
+		},
+		{
+			"name": "cse134b-hw4",
+			"path": "../../../cse134b-hw4"
+		}
+	],
+	"settings": {}
+}

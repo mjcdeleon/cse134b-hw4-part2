@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The CSE Cheese Society</title>
+  <meta name="description" content="The CSE Cheese Society: students, staff, and enthusiasts who taste, learn about, and discuss cheeses from around the world.">
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+
+  <!-- ===== HERE: use for other pages ===== -->
+  <header class="site-header">
+    <a class="site-header__brand" href="index.html">
+      <img src="images/logo.svg" alt="">
+      <span>The CSE Cheese Society</span>
+    </a>
+  </header>
+
+  <!-- ===== HERE: use for other pages ===== -->
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="guide/index.html">Guide</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to The CSE Cheese Society</h1>
+    <p>We are a community of students, staff, and cheese enthusiasts who gather
+      to taste, learn about, and discuss cheeses from around the world. Whether
+      you are an experienced cheese connoisseur or simply cheese-curious, you
+      are welcome here.</p>
+    <p>Explore our <a href="guide/index.html">cheese guide</a>, learn more
+      <a href="about.html">about the Society</a>, or
+      <a href="join.html">join us</a> at an upcoming tasting.</p>
+
+    <section class="fact">
+      <button class="fact__button" type="button" commandfor="cheese-fact" command="toggle-popover">
+        Cheese Fact
+      </button>
+
+      <div id="cheese-fact" popover>
+        <h2>Cheese Fact</h2>
+        <p>Cheese is one of the world&rsquo;s oldest prepared foods, with
+          evidence of cheesemaking dating back thousands of years.</p>
+        <button type="button" commandfor="cheese-fact" command="hide-popover">Close</button>
+      </div>
+    </section>
+  </main>
+
+  <aside aria-label="Cheese of the Month">
+    <h2>Cheese of the Month</h2>
+    <img src="images/blue.svg" alt="An illustration of blue cheese">
+    <p>This month, we are celebrating blue cheese&mdash;bold, distinctive, and
+      full of character.</p>
+  </aside>
+
+  <!-- ===== HERE: use for other pages ===== -->
+  <footer class="site-footer">
+    <p>The CSE Cheese Society &middot; <a href="join.html">Become a member</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+@layer layout {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-3);
+  }
+
+  .form-card {
+    width: 100%;
+    max-width: 28rem;
+    padding: var(--space-3);
+    background: var(--panel);
+    border: var(--border);
+    border-block-start: var(--rule); 
+  }
+  .form-card h1 { font-size: var(--text-l); }
+  .form-card > p { margin-block-end: var(--space-3); }
+
+  .field { margin-block-end: var(--space-2); }
+  .field > label { display: block; margin-block-end: var(--space-1); font-weight: 700; }
+  .field input[type="text"],
+  .field input[type="email"],
+  .field select {
+    width: 100%;
+    padding: var(--space-1) var(--space-2);
+    background: var(--paper);
+    border: var(--border);
+  }
+
+  fieldset.field {
+    padding: var(--space-2);
+    background: var(--paper);
+    border: var(--border);
+  }
+  fieldset.field legend { padding-inline: var(--space-1); font-weight: 700; }
+  fieldset.field label { display: block; margin-block: var(--space-1); }
+  fieldset.field input { margin-inline-end: var(--space-1); }
+
+  .actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-block-start: var(--space-3); }
+  .btn {
+    padding: var(--space-1) var(--space-3);
+    background: var(--paper);
+    border: var(--border);
+    cursor: pointer;
+  }
+  .btn--primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .btn--primary:hover { background: var(--accent); border-color: var(--accent); }
+  .btn--ghost:hover { color: var(--accent); border-color: var(--accent); }
+
+  dialog {
+    max-width: 30rem;
+    padding: var(--space-3);
+    background: var(--paper);
+    border: var(--border);
+    border-block-start: var(--rule);
+  }
+  dialog::backdrop { background: rgb(0 0 0 / 0.4); }
+  dialog h2 { margin-block-end: var(--space-2); }
+  dialog ul { margin-block-end: var(--space-3); padding-inline-start: var(--space-3); }
+  dialog li { margin-block: var(--space-1); }
+
+  @media (max-width: 40rem) {
+    main { padding: var(--space-2); }
+  }
+}
